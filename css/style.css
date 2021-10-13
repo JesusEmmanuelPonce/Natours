@@ -45,10 +45,12 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
     color: #fff;
+    margin-bottom: 60px;
     text-transform: uppercase;
 }
 
@@ -102,4 +104,29 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    border-radius: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    transform: translateY(-1px);
+}
+
+.btn-white {
+    background: #fff;
+    color: #777;
 }
